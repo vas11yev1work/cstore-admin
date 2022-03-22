@@ -1,0 +1,34 @@
+.cell-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.properties {
+  display: flex;
+  flex-wrap: wrap;
+  .property {
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $cs-primary;
+    background-color: $cs-primary-light;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    user-select: none;
+    border: none;
+    border-radius: 3px;
+    transition: box-shadow 0.15s ease-in-out;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px transparentize($cs-primary, 0.2);
+    }
+    &.active {
+      background-color: $cs-primary;
+      color: $cs-white;
+    }
+  }
+}

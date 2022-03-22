@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  object-fit: cover;
+}
+
+body, input, textarea, select, option {
+  font-family: 'Inter', sans-serif;
+  color: $cs-black;
+  outline: none;
+}
+
+body {
+  background-color: $cs-background;
+}
+
+.vue-skeletor {
+  background-color: $cs-border;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
